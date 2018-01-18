@@ -1,0 +1,90 @@
+/*-------------------------left--------------------------------------------------*/
+div.picture {
+    width: 500px;
+    height:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    position:fixed;
+    margin-left: 10%;
+}
+div.article-link {
+    width: auto;
+    background-color: rgba(40,40,40,1);
+    position: absolute;
+    top:-20px;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 5%
+}
+div.article-link a:hover, div.article-link a:link, div.article-link a:visited{
+    color: white
+}
+div.article-title {
+    height: auto;
+    width: 500px;
+    background-color: rgba(50,50,50,0.3);
+    border-top: 1px solid #CCCCCC;
+    position:fixed;
+    margin-left: 10%;
+    left: 0px;
+    bottom: 0px;
+}
+p#article-title-title {
+    font-size: 30px;  /*change according to window size*/
+    color: white;
+    margin-left: 60px;  /*change according to window size*/
+    margin-right: 60px;  /*change according to window size*/
+    margin-top: 40px;  /*change according to window size*/
+    margin-bottom: 10px;
+}
+p#article-title-writer {
+    font-size: 10px;
+    color: whitesmoke;
+    margin-left: 60px;  /*change according to window size*/
+    font-style: oblique;
+    margin-bottom: 40px;
+}
+/*-------------------------right--------------------------------------------------*/
+div.article-list {
+    width: calc(100% - 500px - 20%);
+    min-width: 500px;
+    position: absolute;
+    left: calc(10% + 500px);
+    top: 100px;
+    margin-right: 10%;
+    padding: 10px;
+}
+div.sub-news {
+    vertical-align: text-top;
+    margin-bottom: 10px;
+}
+div.sub-news-picture {
+    width: 110px;
+    height: 80px;
+    display: inline-block;
+}
+div.sub-news-content {
+    min-width: 420px;
+    display: inline-block;
+    padding-left: 10px;
+    position: absolute;
+}
+div.sub-news-content>div:nth-child(1) {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    top: 10px;
+}
+div.sub-news-content>div:nth-child(2) {
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    color: #808080;
+    top:22px;
+}
+div.main-top-news div.sub-news-content>div:nth-child(1):hover, div.main-latest-news div.sub-news-content>div:nth-child(1):hover, div.column div.sub-news-content>div:nth-child(1):hover {
+    color: #990033;
+}

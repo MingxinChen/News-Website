@@ -1,0 +1,68 @@
+div.desk {
+    width: 1100px;
+    min-width: 700px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    padding-left:50px;
+    padding-bottom: 70px;
+    padding-top: 20px;
+    position: absolute;
+    top: 120px;
+    margin-left: calc((100% - 1100px)/2);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+label {
+	line-height: 50px;
+	font-size: 17px;
+	font-weight: 700;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+input {
+	box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+}
+input.input1 {
+	width: 500px;
+	height: 25px;
+	border-radius: 6px;
+    color: dimgray;
+    font-size: 13px;
+}
+input.input2 {
+	margin-right: 10px;
+	vercial-algin: center;
+}
+div.save-button input {
+    position: absolute;
+    left: 75%;
+    bottom: 20px;
+}
+div.cancel-button input {
+    position: absolute;
+    left: calc(75% + 100px);
+    bottom: 20px;
+}
+div.save-button input, div.cancel-button input {
+	width: 80px;
+    height: 35px;
+    background-color: #333366;
+    color: white;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 13px;
+    text-decoration: none;
+  	cursor: pointer;
+  	box-shadow: 0px 0px 10px #888888;
+  	border: 0px #fff solid;
+  	z-index: 1000;
+}
+div.save-button input:hover, div.cancel-button input:hover {
+	background-color: white;
+     color: #333366;
+}
+span {
+	color: red;
+	margin-left: 20px;
+}

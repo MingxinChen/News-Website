@@ -1,0 +1,64 @@
+div.desk {
+    width: 1100px;
+    min-width: 700px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+    position: absolute;
+    top: 120px;
+    margin-left: calc((100% - 1100px)/2);
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+h1 {
+	color: #990033;
+	margin-left: 30px;
+}
+table {
+	width: 1050px;
+	margin-left: 25px;
+	text-align: center;
+}
+tr {
+	height: 30px;
+}
+tr:nth-child(2n+1) {
+	background-color: rgba(0,0,0,0.2);
+}
+td:nth-child(2), td:nth-child(4) {
+	width: 100px;
+}
+td:nth-child(3) {
+	text-align: left;
+	padding-left: 1em;
+}
+div.delete-button, div.cancel-button {
+	display: inline-block;
+	margin-top: 10px;
+}
+div.delete-button input, div.cancel-button input {
+	width: 80px;
+    height: 35px;
+    background-color: #333366;
+    color: white;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 13px;
+    text-decoration: none;
+  	cursor: pointer;
+  	box-shadow: 0px 0px 10px #888888;
+  	border: 0px #fff solid;
+}
+div.delete-button {
+	position: relative;
+	left: 75%;
+}
+div.cancel-button {
+	position: relative;
+	left: calc(75% + 30px);
+}
+div.delete-button input:hover, div.cancel-button input:hover {
+	background-color: white;
+     color: #333366;
+}

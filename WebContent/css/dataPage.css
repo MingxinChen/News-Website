@@ -1,0 +1,109 @@
+/*-------------------------left--------------------------------------------------*/
+div.picture {
+    width: 500px;
+    height:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    position:fixed;
+    margin-left: 10%;
+}
+div.article-link {
+    width: auto;
+    background-color: rgba(40,40,40,1);
+    position: absolute;
+    top:-20px;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 5%
+}
+div.article-link a:hover, div.article-link a:link, div.article-link a:visited{
+    color: white
+}
+div.article-title {
+    height: auto;
+    width: 500px;
+    background-color: rgba(50,50,50,0.3);
+    border-top: 1px solid #CCCCCC;
+    position:fixed;
+    margin-left: 10%;
+    left: 0px;
+    bottom: 0px;
+}
+p#article-title-title {
+    font-size: 30px;  /*change according to window size*/
+    color: white;
+    margin-left: 150px;  /*change according to window size*/
+    margin-right: 60px;  /*change according to window size*/
+    margin-top: 40px;  /*change according to window size*/
+    margin-bottom: 10px;
+}
+p#article-title-writer {
+    font-size: 10px;
+    color: whitesmoke;
+    margin-left: 60px;  /*change according to window size*/
+    font-style: oblique;
+    margin-bottom: 40px;
+}
+/*-------------------------right--------------------------------------------------*/
+div.data-container {
+    min-width: 700px;
+    position: absolute;
+    left: calc(10% + 500px);
+    top: 110px;
+    margin-right: 10%;
+    /*padding: 10px;*/
+	font-size: 15px;
+	text-align: center;
+}
+div.hucaiqindebaikuang {
+	min-width: 700px;
+	height: 20px;
+    position: fixed;
+    left: calc(10% + 500px);
+    top: 100px;
+    margin-right: 10%;
+	z-index: 100;
+	background-color: #FFFFFF;
+}
+table.table-head {
+	position: fixed;
+	z-index: 101;
+	background-color: rgb(236,224,254);
+	box-shadow: 1px 0px 5px rgba(0,0,0, 0.5);
+	margin-left: 10px;
+}
+table.table-data {
+	position: relative;
+	top: 40px;
+	margin-left: 10px;
+	z-index: 99;
+}
+table tr {
+	height: 35px;
+}
+table.table-data tr:nth-child(2n) {
+	background-color: rgba(0,0,0,0.1);
+}
+table.table-data tr:hover {
+	background-color: rgba(236,224,254,0.5);
+}
+table td {
+	width: 90px;
+}
+/*-------------------------float--------------------------------------------------*/
+table.typeBlock {
+	position: fixed;
+    right: 10px;
+    top: 250px;
+    margin-right: 5%;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px rgb(0,0,0);
+    background-color: #FFFFFF;
+    z-index: 200;
+}
+table.typeBlock td {
+	height: 30px;
+}

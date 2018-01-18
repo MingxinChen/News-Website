@@ -1,0 +1,243 @@
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;  
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family:knowledge-reg,helvetica,arial,sans-serif;
+    font-size:10px;
+    margin:0; 
+    background-color: #fff; 
+    width: 100%;
+    height: 100%;
+}
+div.header{
+    background-color: #333366; 
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    font-size:15px;
+    z-index: 6000000;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+div.main-logo {
+    position: absolute;
+    top: 16px;
+    left: 10%;
+    color: white;
+    font-size: 100px;
+}
+div.main-logo a:link, div.main-logo a:visited{
+	color: white;
+	text-shadow: 0px 0px 15px #111142, 0px 0px 10px #FFB300;
+}
+div.main-logo a:hover {
+	color: #990033;
+	
+}
+a{
+    background-color:transparent;
+    text-decoration:none;
+    color:#111;
+    cursor:pointer;
+}
+a:active,a:hover{outline:0;}
+a:hover{color:#990033; text-decoration:none;}
+.horizontal-list li{display:inline-block; border-radius:5px; }
+
+.nav-list{
+    text-align:center;
+    width:1100px;
+    position:relative;
+    top:49px;
+    left: 70%;
+    margin-left:-550px;
+    visibility:visible;
+    opacity:1;
+    
+    -webkit-transition:right .25s ease-in-out,left .25s ease-in-out,opacity .25s ease-in-out .4s,visibility .25s ease-in-out .4s;
+    -moz-transition:right .25s ease-in-out,left .25s ease-in-out,opacity .25s ease-in-out .4s,visibility .25s ease-in-out .4s;
+    transition:right .25s ease-in-out,left .25s ease-in-out,opacity .25s ease-in-out .4s,visibility .25s ease-in-out .4s;
+}
+
+
+.nav-item{
+    position:relative;
+    text-align:center;
+    z-index:6000000;
+    padding:2px 20px 8px;
+    height:31px;
+    cursor:pointer;
+    -webkit-transition:background .15s ease-in-out, box-shadow ease-in-out .4s;
+    -moz-transition:background .15s ease-in-out, box-shadow ease-in-out .4s;
+    transition:background .15s ease-in-out, box-shadow ease-in-out .4s;
+}
+/*绫诲悕閾炬帴瀛椾綋*/
+.nav-item a{
+    display:block;
+    padding:0;
+    font-family:knowledge-reg,helvetica,arial,sans-serif;
+    font-weight:400;
+    font-size:1.4em;
+    line-height:1.83;
+    color:#fff;
+    text-align:center;
+    -webkit-transition:color .25s ease-in-out;-moz-transition:color .25s ease-in-out;
+    transition:color .25s ease-in-out;
+}
+
+.nav-item.active-icon.search-tab{position:absolute;right:0;padding-left:0;padding-right:0;}
+li.nav-item:hover{background: linear-gradient(to bottom, #333366 0% , #FFFFFF 100%); box-shadow: inset  0px -2px 5px rgba(0,0,0,0.5), inset 0px 1px 5px rgba(256,256,256,0,5); }
+li.nav-item.no-subnav:hover{background:inherit;}
+li.nav-item.pictures-tab.active-icon:hover div.pictures-icon{background-position:-58px -4px;}
+li.nav-item:hover a.nav-link-sec{color:#444444;border-bottom:none;}
+
+.nav-item .subnav{
+    font-size:10px;
+    position:absolute;
+    top:36px;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+    visibility:hidden;
+    opacity:0;
+    padding:0 2px 2px 0;
+    background:#FFFFFF;
+    width:150px;
+    -webkit-transition:all .05s ease-in-out .20s;
+    -moz-transition:all .05s ease-in-out .20s;
+    transition:all .05s ease-in-out .20s;
+    /*border-radius: 5px;*/
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+#nav-item-6, #nav-item-7, #nav-item-8 {
+    display: none;
+}
+#subnav-5 {
+	width: 195px;
+}
+.nav-item .subnav.open{-webkit-transition:all .10s ease-in-out;-moz-transition:all .10s ease-in-out;transition:all .10s ease-in-out;}
+.nav-item:hover .subnav{visibility:visible;opacity:1;right:inherit;bottom:inherit;}
+.subnav-inset{padding:5px 7px 5px;border-top:0;opacity:1;text-align:left;}
+
+.nav-item .subnav-list{
+    list-style:none;
+    width:150px;
+    padding:0;
+    margin:0;
+    display:inline-block;
+    text-align:left;
+    vertical-align:text-top;
+}
+.subnav-list li{padding:0;float:none;display:block;}
+.subnav-list li:hover a{color:#990033;}
+.subnav-list a{padding:8px 0 8px 5px;background:none;font-size:1.3em;font-weight:normal;line-height:1.38;color:#333;text-align:left;text-transform:capitalize;}
+.headerBlock {
+	font-size: 2em;
+	font-weight: blod;
+	color: #333366;
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.headerBlock img{
+	border-radius: 100%;
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	vertical-align: middle;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+/*----------------------------------------------login and register----------------------------------------------*/
+div.log_reg_shadow {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	visibility: hidden;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 15px;
+	opsicity: 1;
+	-webkit-transition:all .09s ease-in-out .20s;
+    -moz-transition:all .090s ease-in-out .20s;
+    transition:all .09s ease-in-out .20s;
+}
+div.welcome {
+	position: fixed;
+	left: 80px;
+	top: 200px;
+	width: 600px;
+}
+div.welcome p:nth-child(1) {
+	font-weight: 900;
+	font-size: 40px;
+	text-shadow: 0px 0px 5px rgba(256,256,256,0.5);
+}
+div.login, div.register{
+	visibility: hidden;
+	position: fixed;
+	left: 800px;
+	top: 200px;
+	opsicity: 1;
+	background: rgba(0,0,0,0.7);
+	box-shadow: inset 0px 0px 15px rgba(256,256,256,0.7);
+	-webkit-transition:all .09s ease-in-out .20s;
+    -moz-transition:all .09s ease-in-out .20s;
+    transition:all .09s ease-in-out .20s;
+}
+div.log_reg_shadow table {
+	position: relative;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+}
+div.log_reg_shadow table tr {
+	height: 50px;
+	
+}
+div.log_reg_shadow table tr td:nth-chile(1){
+	width: 50px;
+}
+div.log_reg_shadow input {
+	width: 200px;
+	height: 20px;
+	margin: 8px;
+	background: rgba(20,20,20,1);
+	border-width: 0.2px;
+	color: #FFFFFF;
+}
+div.log_reg_shadow input:hover {
+	background: rgba(256,256,256,1);
+	box-shadow: inset 0px 0px 10px #333366;
+	color: #000000;
+}
+div.log_reg_shadow input.input-button {
+	width: 50px;
+}
+div.log_reg_shadow a:hover, div.log_reg_shadow a:link, div.log_reg_shadow a:visited{
+	color: #FFFFFF;
+	font-size: 12px;
+}
+div.log_reg_shadow tr.lastRow {
+	text-align: right;	
+}
+
+
+
+
+
+
+
+
+
+

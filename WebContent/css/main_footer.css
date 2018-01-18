@@ -1,0 +1,36 @@
+div.footer {
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    background-color: #333366;
+    color: white;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 100;
+    margin-top: 50px;
+}
+div.footer>div {
+    display: inline-block;
+    position: relative;
+}
+div.footer>div:nth-child(1) {
+    left:20%;   
+}
+div.footer>div:nth-child(2) {
+    left: 33%;
+    top: -26px;
+}
+div.footer>div:nth-child(3) {
+    left: 46%;
+    top: -27px;
+}
+div.footer>div>ul:nth-child(1) {
+    list-style: circle;
+    font-size: 20px;
+}
+div.footer>div>ul:nth-child(2) {
+    color: white;
+    font-size: 10px;
+    list-style:none;
+    line-height: 25px;
+}
